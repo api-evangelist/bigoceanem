@@ -1,23 +1,62 @@
 aid: bigoceanem
+
 name: Bigoceanem
-description: 'Bigoceanem is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://image.static.bstage.in/cdn-cgi/image/metadata=none/bigocean/95b3c8ed-882f-4bc6-aa29-a01f835f096e/6684c8f1-cac6-42bd-889a-65092c29052b/ori.jpg
+
+description: 'Bigoceanem is a South Korean entertainment and celebrity management company, originally formed from the merger of several media entities. It manages K‑pop artists, produces television content, and operates fan community platforms. The company expanded its portfolio in 2021 by acquiring Big Whale Entertainment and continues to develop multimedia projects across music, video, and digital fan engagement services.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bigoceanem/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Entertainment
+- K-pop
+- Media
+- South-Korea
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bigoceanem-hosts.yml
+- type: Vendors
+  url: vendors/bigoceanem-vendors.yml
+- type: DomainSecurity
+  url: security/bigoceanem-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bigoceanem
+  url: https://bigocean-official.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: OpenAPI spec endpoints returned 404, and no documentation host was found.
+  evidence:
+    - url: https://bigocean-official.com/openapi.json
+      status: 404
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

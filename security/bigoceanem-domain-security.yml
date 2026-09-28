@@ -1,0 +1,15 @@
+generated: '2026-09-28'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: bigocean-official.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec  7 07:47:46 2026 GMT
+  hsts: false
+domains:
+- domain: bigocean-official.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
